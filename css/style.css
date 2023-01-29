@@ -77,6 +77,12 @@ a {
   z-index: 100;
 }
 
+@media (max-width:575px) {
+  .main-heading {
+    font-size: 22px;
+  }
+}
+
 .main-heading:hover::before {
   animation: merge-left 0.5s linear forwards;
 }
@@ -1041,6 +1047,12 @@ header .links li:hover>a::after {
   gap: 20px;
 }
 
+@media (max-width: 575px) {
+  .events .container .holder .count {
+    gap: 5px;
+  }
+}
+
 .events .container .holder .count .full-time {
   flex-basis: 15%;
   text-align: center;
@@ -1091,6 +1103,13 @@ header .links li:hover>a::after {
   margin: 20px auto;
   width: fit-content;
   padding: 30px 40px;
+}
+
+@media (max-width: 575px) {
+  .events .container .form {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1826,3 +1845,14 @@ footer .made span a {
 }
 
 /* End Animation */
+@media(max-width:575px) {
+
+  .gallery .container .images,
+  .features .container,
+  .testimonials .container,
+  .team .container,
+  .services .container,
+  .pricing .container {
+    grid-template-columns: minmax(250px, 1fr);
+  }
+}
